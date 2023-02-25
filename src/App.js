@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="p-4 md:p-8 bg-gradient-to-r from-cyan-500 to-blue-500 min-h-screen font-poppins">
+        <Hero/>
+        <About/>
+      </div>
+    </>
   );
 }
 
+ {/* <div className="homebody">
+                <Link className="link" to='/login'><button className="btn">Login</button></Link>
+
+                <Link className="link" to="./signin"><button className="btn">SignIn</button></Link>
+
+                <Link className="link" to="./about"><button className="btn"> About</button></Link>
+
+                <h2 className="name">{props.name ? `Welcome - ${props.name}` : "Login Please"}</h2>
+
+            </div> */}
 export default App;
